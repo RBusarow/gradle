@@ -111,7 +111,8 @@ class IntermediateModelController(
         return model
     }
 
-    private fun locateCachedModel(key: ModelKey): BlockAddress? {
+    private
+    fun locateCachedModel(key: ModelKey): BlockAddress? {
         val cachedInCurrent = intermediateModels[key]
         if (cachedInCurrent != null) {
             return cachedInCurrent
